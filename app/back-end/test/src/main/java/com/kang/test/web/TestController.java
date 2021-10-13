@@ -13,4 +13,10 @@ public class TestController {
 		String test = "Do you build a SnowMan?";
 		return new ResponseEntity<String>(test, HttpStatus.OK);
 	}
+
+            @GetMapping("/helloWorld")
+	public ResponseEntity<?> testMethod() {
+		String test = "Do you build a SnowMan?";
+		return new ResponseEntity<String>(test, HttpStatus.OK);
+	}
 }
